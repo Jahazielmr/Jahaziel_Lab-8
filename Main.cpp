@@ -70,6 +70,7 @@ int main(){
                 			 cout <<"2-Conjuncion"<<endl;
                 			 cout <<"3-Implicacion"<<endl;
                 			 cout <<"4-Doble Implicacion"<<endl;
+                			 cout <<"5.Conjuncion exclusiva"<<endl;
                 			 cin>> op;
 
                 			 switch(op){
@@ -115,10 +116,17 @@ int main(){
                              			}
 
 
-
-
-
                 			 		break;
+                			 		}
+
+                			 		case 5:{
+                			 				cout<<"El resultado es: "<<endl;
+                             					int * res = *binario[pos1] ^ *binario[pos2];
+                             					for (int i = 0; i < 4; ++i){
+                             						cout<< res[i];	
+                             				}
+
+                			 			break;
                 			 		}
 
                 			 }
